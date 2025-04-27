@@ -27,7 +27,7 @@ Uso @GET("api/BTC/ticker/") para apontar o endpoint correto.
 Marco o método como suspend, porque quero chamar dentro de um componente de programa que permite suspender e retomar a execução sem bloquear a UI.
 Ele me devolve um Response<TickerResponse>, com tudo incluso (status, cabeçalhos e corpo).
 
-3. service/MercadoBitcoinServiceFactory.kt
+3. factory/MercadoBitcoinServiceFactory.kt
    
 Esse arquivo faz a “fábrica” do Retrofit, então importo o builder e o conversor Gson.
 
@@ -36,7 +36,7 @@ Esse arquivo faz a “fábrica” do Retrofit, então importo o builder e o conv
 No create() eu configuro o baseUrl da API e adiciono GsonConverterFactory para interpretar o JSON.
 Chamando retrofit.create(...) eu recebo uma instância pronta de MercadoBitcoinService.
 
-4. MainActivity.kt
+4. main/MainActivity.kt
    
 Importo tudo que vou usar: UI, coroutines, formatação e a minha factory de serviço.
 

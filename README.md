@@ -8,9 +8,11 @@ Este projeto Android, desenvolvido em Kotlin, monitora a cotação de moedas cri
 Evidência do funcionamento do projeto:
 
 1ª cotação do Bitcoin:
+
 ![image](https://github.com/user-attachments/assets/5a00a879-d5cb-43e2-a032-bd803d48c610)
 
 2ª cotação do Bitcoin:
+
 ![image](https://github.com/user-attachments/assets/c81b3170-00e6-4e07-954b-17c394986cbd)
 
 

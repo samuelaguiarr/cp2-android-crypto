@@ -5,6 +5,13 @@ Aluno: Samuel Schaeffere Aguiar - 550212
 
 Este projeto Android, desenvolvido em Kotlin, monitora a cotação de moedas criptográficas (no caso, Bitcoin) utilizando a API do Mercado Bitcoin. A aplicação faz uma requisição REST para obter o valor atual do Bitcoin em reais (BRL) e exibe o preço e a data/hora da última atualização. O usuário pode pressionar o botão “Atualizar” para buscar a cotação mais recente.
 
+Evidência do funcionamento do projeto:
+
+1ª cotação do Bitcoin: ![image](https://github.com/user-attachments/assets/5a00a879-d5cb-43e2-a032-bd803d48c610)
+
+2ª cotação do Bitcoin: ![image](https://github.com/user-attachments/assets/c81b3170-00e6-4e07-954b-17c394986cbd)
+
+
 Explicação do código
 
 1. model/TickerResponse.kt

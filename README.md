@@ -8,6 +8,7 @@ Este projeto Android, desenvolvido em Kotlin, monitora a cotação de moedas cri
 Explicação do código
 
 1. model/TickerResponse.kt
+   
 Eu criei essa classe TickerResponse como um “envelope” para o JSON que recebo da API. O corpo da resposta vem dentro de um campo ticker, então espelho isso aqui.
 
  ![image](https://github.com/user-attachments/assets/68239543-ee71-4bab-b8bc-ce54583a6ebc)
@@ -16,7 +17,8 @@ No objeto interno Ticker, eu mapeio cada campo que a API retorna:
 high, low, vol, last, buy, sell viram String.
 Date chega como timestamp Unix (segundos), então guardo num Long.
 
-3. service/MercadoBitcoinService.kt
+2. service/MercadoBitcoinService.kt
+   
 Importei o modelo TickerResponse, o tipo Response<T> do Retrofit e a anotação @GET.
 
 ![image](https://github.com/user-attachments/assets/43cae7be-19cb-4860-8957-117f745aa8d2)
@@ -26,6 +28,7 @@ Marco o método como suspend, porque quero chamar dentro de um componente de pro
 Ele me devolve um Response<TickerResponse>, com tudo incluso (status, cabeçalhos e corpo).
 
 3. service/MercadoBitcoinServiceFactory.kt
+   
 Esse arquivo faz a “fábrica” do Retrofit, então importo o builder e o conversor Gson.
 
 ![image](https://github.com/user-attachments/assets/1c48a710-d4f5-4eb1-92a2-24557ab62051)
@@ -34,6 +37,7 @@ No create() eu configuro o baseUrl da API e adiciono GsonConverterFactory para i
 Chamando retrofit.create(...) eu recebo uma instância pronta de MercadoBitcoinService.
 
 4. MainActivity.kt
+   
 Importo tudo que vou usar: UI, coroutines, formatação e a minha factory de serviço.
 
 ![image](https://github.com/user-attachments/assets/717d378d-3deb-4bc5-8a85-7ba862b85117)

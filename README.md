@@ -16,6 +16,33 @@ Evidência do funcionamento do projeto:
 ![image](https://github.com/user-attachments/assets/c81b3170-00e6-4e07-954b-17c394986cbd)
 
 
+
+Arquivos Kotlin do projeto:
+
+TicketResponse.kt
+
+![image](https://github.com/user-attachments/assets/3fb2989a-9cb2-4dcc-b3f0-ad9b7560a1cd)
+
+
+MercadoBitcoinService.kt
+
+![image](https://github.com/user-attachments/assets/c25ac3d5-c7cf-42a3-888a-794b13ecd9ac)
+
+
+
+MercadoBitcoinServiceFactory.kt
+
+![image](https://github.com/user-attachments/assets/f8a6a827-df45-45de-8a25-a0dd5116955d)
+
+
+MainActivity.kt
+
+![image](https://github.com/user-attachments/assets/69b8c502-acb5-4642-b032-752e0b13d223)
+
+![image](https://github.com/user-attachments/assets/0486363e-a625-49b8-86df-7197857047f6)
+
+
+
 Explicação do código
 
 1. model/TickerResponse.kt
